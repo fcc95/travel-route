@@ -1,0 +1,39 @@
+{
+  "routes": [
+    {
+      "from": "Spain",
+      "to": "Greece",
+      "reason": "Travel restrictions between Spain and Greece due to diplomatic issues"
+    },
+    {
+      "from": "France",
+      "to": "Russia",
+      "reason": "Travel restrictions due to current geopolitical situation"
+    },
+    {
+      "from": "United States",
+      "to": "North Korea",
+      "reason": "Travel restrictions due to diplomatic relations"
+    },
+    {
+      "from": "Israel",
+      "to": "Iran",
+      "reason": "Travel restrictions due to diplomatic relations"
+    },
+    {
+      "from": "Ukraine",
+      "to": "Russia",
+      "reason": "Travel restrictions due to ongoing conflict"
+    },
+    {
+      "from": "Taiwan",
+      "to": "China",
+      "reason": "Travel restrictions due to political tensions"
+    },
+    {
+      "from": "South Korea",
+      "to": "North Korea",
+      "reason": "Travel restrictions due to political situation"
+    }
+  ]
+}
