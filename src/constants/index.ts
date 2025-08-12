@@ -1,5 +1,7 @@
 import type { NodeType, EdgeType } from "../types";
 
+export * from "./nodeTypes";
+
 export const IMAGES = {
   place: "https://cdn-icons-png.flaticon.com/512/535/535239.png",
   hotel: "https://cdn-icons-png.flaticon.com/512/3837/3837802.png",
@@ -33,19 +35,12 @@ export const INITIAL_NODES: NodeType[] = [
     position: { x: 0, y: 200 },
     data: { name: "Germany", thumbnail: "https://flagcdn.com/w80/de.png" },
   },
-  {
-    id: "gr",
-    type: "route",
-    position: { x: 220, y: 200 },
-    data: { name: "Greece", thumbnail: "https://flagcdn.com/w80/gr.png" },
-  },
 ];
 
 export const INITIAL_EDGES: EdgeType[] = [
   { id: "fr-es", source: "fr", target: "es" },
   { id: "es-it", source: "es", target: "it" },
   { id: "fr-de", source: "fr", target: "de" },
-  { id: "de-gr", source: "de", target: "gr" },
 ];
 
 export const MESSAGE_TIMEOUTS = 5000;

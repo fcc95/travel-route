@@ -1,69 +1,124 @@
-# React + TypeScript + Vite
+# Travel Route Planner
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based web application for planning and visualizing travel routes between different destinations. Built with TypeScript, Vite, and modern web technologies.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Interactive Route Planning**: Create and visualize travel routes between airports, hotels, and places
+- **Multiple Node Types**: Support for airports, countries, hotels, places, and custom nodes
+- **Real-time Search**: Search functionality for finding destinations and routes
+- **Graph Visualization**: Visual representation of travel connections and routes
+- **Responsive Design**: Modern UI that works on desktop and mobile devices
+- **TypeScript**: Full type safety and better development experience
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Frontend**: React 18 + TypeScript
+- **Build Tool**: Vite
+- **Styling**: CSS3 with modern design principles
+- **State Management**: React Hooks
+- **Graph Management**: Custom graph implementation
+- **Package Manager**: npm/yarn
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📦 Installation
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+1. **Clone the repository**
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+   ```bash
+   git clone <repository-url>
+   cd travel-route
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Start the development server**
+
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+4. **Open your browser**
+   Navigate to `http://localhost:5173` to view the application
+
+## 🏗️ Project Structure
+
+```
+src/
+├── components/          # Reusable UI components
+│   ├── button/         # Button components
+│   ├── controlPanel/   # Main control interface
+│   ├── nodes/          # Different node type components
+│   ├── searchSection/  # Search functionality
+│   └── sidebar/        # Application sidebar
+├── classes/            # Core business logic classes
+├── hooks/              # Custom React hooks
+├── services/           # API and utility services
+├── types/              # TypeScript type definitions
+└── constants/          # Application constants
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🎯 Usage
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Basic Route Planning
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. Use the search bar to find destinations
+2. Select the type of node (airport, hotel, place, etc.)
+3. Add nodes to your route
+4. View the visual representation of your travel plan
+
+### Node Types
+
+- **Airport**: Major transportation hubs
+- **Country**: Geographic regions
+- **Hotel**: Accommodation options
+- **Place**: Points of interest
+- **Custom**: User-defined destinations
+
+## 🚀 Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+- `npm run type-check` - Run TypeScript type checking
+
+## 🔧 Development
+
+### Prerequisites
+
+- Node.js 16+
+- npm or yarn
+
+### Code Style
+
+- ESLint configuration for code quality
+- TypeScript strict mode enabled
+- Consistent component structure
+
+## 📝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 🤝 Support
+
+If you have any questions or need help, please open an issue on GitHub or contact the development team.
+
+---
+
+**Happy Travel Planning! ✈️🌍**

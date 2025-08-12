@@ -10,7 +10,7 @@ import {
 } from "@xyflow/react";
 import "@xyflow/react/dist/style.css";
 
-import RouteNode from "../nodes/routeNode/RouteNode";
+import RouteNode from "../routeNode/RouteNode";
 import type { NodeElementType, EdgeType, NodeType } from "../../types";
 
 const nodeTypes = { route: RouteNode };

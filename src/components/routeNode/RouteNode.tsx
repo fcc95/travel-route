@@ -1,5 +1,5 @@
 import { Handle, Position } from "@xyflow/react";
-import type { NodeElementType } from "../../../types";
+import type { NodeElementType } from "../../types";
 
 interface IProps {
   data: NodeElementType;

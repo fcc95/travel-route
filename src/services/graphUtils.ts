@@ -1,8 +1,6 @@
 import type { NodeType, EdgeType } from "../types";
 
-/**
- * Calculates connection counts for each node based on outgoing edges
- */
+// Calculates connection counts for each node based on outgoing edges
 export const calculateConnectionCounts = (
   nodes: NodeType[],
   edges: EdgeType[]
@@ -25,16 +23,11 @@ export const calculateConnectionCounts = (
   }));
 };
 
-/**
- * Generates a unique edge ID to support multiple edges from the same source
- */
 export const generateEdgeId = (source: string, target: string): string => {
   return `${source}-${target}-${Date.now()}`;
 };
 
-/**
- * Creates a new node with the given data and position
- */
+// Creates a new node with the given data and position
 export const createNewNode = (
   nodeData: { name: string; thumbnail: string },
   position: { x: number; y: number }

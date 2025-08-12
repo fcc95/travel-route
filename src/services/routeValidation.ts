@@ -5,7 +5,7 @@ export interface RouteValidationResult {
   isValid: boolean;
   reason?: string;
 }
-// todo need to check if it's a cycle
+
 export const checkForCycles = (
   nodes: NodeType[],
   edges: EdgeType[],
@@ -71,9 +71,7 @@ export const checkForCycles = (
   return { isValid: true };
 };
 
-/**
- * Checks if a route already exists (prevents duplicate edges)
- */
+// Checks if a route already exists (prevents duplicate edges)
 export const checkDuplicateRoute = (
   edges: EdgeType[],
   sourceId: string,

@@ -5,3 +5,6 @@ export { default as SearchInput } from "./searchInput/SearchInput";
 export { default as SearchResult } from "./searchResult/SearchResult";
 export { default as ResultItem } from "./resultItem/ResultItem";
 export { default as RadioButton } from "./radioButton/RadioButton";
+export { default as NodeTypeSelector } from "./nodeTypeSelector/NodeTypeSelector";
+export { default as SearchSection } from "./searchSection/SearchSection";
+export { default as LoadingSpinner } from "./loadingSpinner/LoadingSpinner";

@@ -70,7 +70,6 @@ export const useGraphManager = () => {
     showMessage("Graph cleared and reset to initial state");
   }, [setNodes, setEdges, showMessage]);
 
-  //   todo need check
   const onDrop = useCallback(
     (event: React.DragEvent) => {
       event.preventDefault();
